@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-size: 15px;
+  padding: 5rem 1rem;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: var(--Very-light-gray);
+  min-height: 100vh;
+  color: var(--Very-light-gray);
+}
+#tab1 {
+  background-color: var(--Bright-orange);
+}
+#tab1 a {
+  color: var(--Bright-orange);
+}
+#tab1 a:hover {
+  background-color: var(--Bright-orange);
+  color: var(--Very-light-gray);
+}
+#tab2 {
+  background-color: var(--Dark-cyan);
+}
+#tab2 a {
+  color: var(--Dark-cyan);
+}
+#tab2 a:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Very-light-gray);
+}
+#tab3 {
+  background-color: var(--Very-dark-cyan);
+}
+#tab3 a {
+  color: var(--Very-dark-cyan);
+}
+#tab3 a:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-gray);
+}
+main {
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+.tab {
+  padding: 3.5rem;
+}
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+a {
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  background-color: var(--Very-light-gray);
+  border-radius: 2rem;
+  font-weight: bold;
+  border: 2px solid var(--Very-light-gray);
+}
+p {
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+  color: var(--Transparent-white);
+}
+.test {
+  width: 2px;
+  height: 1rem;
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  p {
+    max-width: 25ch;
+  }
+}
